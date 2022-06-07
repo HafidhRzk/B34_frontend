@@ -2,8 +2,7 @@ import axios from 'axios';
 
 // Create base URL API
 export const API = () => {
-  const baseUrl =
-    process.env.REACT_APP_SERVER_URL ||
+  baseUrl: process.env.REACT_APP_SERVER_URL ||
     'https://b34-backend.herokuapp.com/api/v1' ||
     'https://localhost:5000/api/v1';
 
