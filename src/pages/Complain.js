@@ -17,7 +17,7 @@ export default function Complain (){
 
     useEffect(() =>{
         socket = io( process.env.REACT_APP_SERVER_URL ||
-            'https://b34-backend.herokuapp.com/api/v1' || 
+            'b34-backend.herokuapp.com/api/v1' || 
             'http://localhost:5000', {
             auth: {
                 token: localStorage.getItem('token'),
